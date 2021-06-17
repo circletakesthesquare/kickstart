@@ -35,7 +35,7 @@ class RequestRow extends Component {
         <Cell>{request.description}</Cell>
         <Cell>{web3.utils.fromWei(request.value, 'ether')}</Cell>
         <Cell>{request.recipient}</Cell>
-        <Cell>{request.approvalCount}/{request.approversCount}</Cell>
+        <Cell>{request.approvalCount} / {request.approversCount}</Cell>
         <Cell>
           {request.complete ? null : (
           <Button color="green" basic onClick={this.onApprove}>Approve</Button>
